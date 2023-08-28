@@ -1,6 +1,6 @@
 import Header from './componentes/header/Header';
 import Footer from './componentes/footer/Footer';
-import Filme from './componentes/filme/Filme';
+import Meio from './componentes/meio/Meio';
 
 import './App.css'
 
@@ -11,7 +11,7 @@ function App() {
     <div>
     <Header/>
     <Footer/>
-    <Filme/>
+    <Meio/>
     </div>
   );
 }

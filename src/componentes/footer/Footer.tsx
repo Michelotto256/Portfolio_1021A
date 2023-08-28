@@ -1,26 +1,26 @@
 import './Footer.css'
 import Link from './../link/Link'
-
+import imagem from "../img/logopé.png";
 
 export function Footer(){
     return(
     <footer>
         <div className='conteudo'>
             <div className='coisas'>
-                <img className='logofooter' src="../src/componentes/barbiefooter.png" alt="" />
+            <img className='rodape' src={imagem} alt="" />
             </div>
             <ul className="lista">
                 <li>
-                    <h3>Life in the DreamHouse</h3>
+                    <h3>Adquira o Seu</h3>
                 </li>
                 <li>
-                    <Link texto='Compre sua Barbie'/>
+                    <Link texto='Home'/>
                 </li>
                 <li>
-                    <Link texto='Monte sua Barbie'/>
+                    <Link texto='Cursos'/>
                 </li>
                 <li>
-                    <Link texto='Acessórios'/>
+                    <Link texto='Downloads'/>
                 </li>
             </ul>
 
@@ -36,6 +36,21 @@ export function Footer(){
                 </li>
                 <li>
                     <Link texto='Termos e Condições'/>
+                </li>
+            </ul>
+
+            <ul className="lista">
+                <li>
+                    <h3>Suporte</h3>
+                </li>
+                <li>
+                    <Link texto='FAQ'/>
+                </li>
+                <li>
+                    <Link texto='Telefones'/>
+                </li>
+                <li>
+                    <Link texto='Chat'/>
                 </li>
             </ul>
 

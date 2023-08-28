@@ -11,7 +11,7 @@ footer {
     width: 100%;
     position: fixed;
     bottom: 0;
-    background-color: #fa8fb1;;
+    background-color: #40F8FF;;
 }
 
 a {
@@ -35,7 +35,8 @@ a {
     gap: 0.75rem;
     list-style: none;
     padding-top: 50px;
-    color: white;
+    padding-bottom: 15px;
+    color: #279EFF;
 }
 
 .lista a {
@@ -44,10 +45,12 @@ a {
 }
 
 .lista a:hover {
-    color: #7f37c9;
+    color: white;
 }
 
 .logofooter{
     width: 160px;
 }
-
+.rodape{
+    padding-top: 30px;
+}

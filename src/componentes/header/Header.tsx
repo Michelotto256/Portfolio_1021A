@@ -1,11 +1,12 @@
 import './Header.css'
 import Link from './../link/Link'
+import imagem from "../img/logov.png";
 
 export function Header(){
     return(
     <header> 
         <div>
-            <img className="img" src="../src/componentes/barbie-logo.png" alt="" /> 
+            <img src={imagem} alt="" /> 
         </div>
         <nav>
             <ul>
