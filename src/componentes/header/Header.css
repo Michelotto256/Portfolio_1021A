@@ -16,6 +16,7 @@ header ul{
     gap: 15px;
 }
 header ul li a{
+    border-radius: 20px;
     padding: 15px;
     text-decoration: none;
     color: #279EFF;
