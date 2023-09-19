@@ -10,8 +10,8 @@ function App() {
   return (
     <div>
     <Header/>
-    <Footer/>
     <Meio/>
+    <Footer/>
     </div>
   );
 }
