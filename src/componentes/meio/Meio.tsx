@@ -6,7 +6,8 @@ import Link from './../link/Link'
 function Meio(){
     return(
         
-        <section className="meio1">
+      <>  
+      <section className="meio1">
             <div className="meio-content">
                 <h1>Ola, Sou o Vitor Michelotto</h1>
                 <h3>Estudante do IFMS Navirai</h3>
@@ -19,7 +20,12 @@ function Meio(){
             <div>
             <img className='produ' src={imagem} alt="" />
             </div>
+
+            <main>
+        
+            </main>
         </section>
+        </>
     )
 }
 export default Meio
