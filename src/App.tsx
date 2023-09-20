@@ -9,9 +9,9 @@ function App() {
 
   return (
     <div>
-    <Header/>
-    <Meio/>
-    <Footer/>
+      <Header/>
+      <Meio/>
+      <Footer/>
     </div>
   );
 }

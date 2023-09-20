@@ -92,3 +92,33 @@ body{
     width: 600px;
     margin-left: 30vh;
 }
+
+
+
+.meio2{
+    display: grid;
+    justify-content: center;
+    column-gap: 25px;
+    row-gap: 25px;
+    padding: 50px;
+    grid-template-columns: repeat(5, 1fr);
+}
+  #txtBusca{
+    background-color:transparent;
+    padding-left:5px;
+    font-size:18px;
+    border:none;
+    border:solid 2px #5F9EA0;
+    border-radius:10px;
+    width:300px;
+    height:32px;
+    display: flex;
+    justify-content: center;
+    color: white;
+  }
+
+  #divBusca{
+    padding-top: 60px;
+    padding-bottom: 90px;
+    margin-left: 755px;
+  }
