@@ -120,5 +120,6 @@ body{
   #divBusca{
     padding-top: 60px;
     padding-bottom: 90px;
-    margin-left: 755px;
-  }
+    display: flex;
+    justify-content: center;
+}
