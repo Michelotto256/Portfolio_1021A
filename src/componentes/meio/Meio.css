@@ -1,6 +1,13 @@
 body{
-    color: white;
     background-color: #081b29;
+}
+
+.texto_prin{
+    color: white;
+}
+
+p{
+    color: white;
 }
 
 .meio1{
@@ -102,6 +109,7 @@ body{
     row-gap: 25px;
     padding: 50px;
     grid-template-columns: repeat(5, 1fr);
+    margin-bottom: 150px;
 }
   #txtBusca{
     background-color:transparent;

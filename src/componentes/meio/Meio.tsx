@@ -2,7 +2,7 @@ import { useState } from 'react'
 import './Meio.css'
 import Conteudo from './../conteudos/Conteudos'
 import imagem from "..//img/prod.png";
-import Link from './../link/Link'
+import Link from '../linknav/LinkNav'
 type ConteudoTypes = {
     id: number,
     titulo: string,
@@ -53,12 +53,12 @@ function Meio() {
             <main>
                 <section className="meio1">
                     <div className="meio-content">
-                        <h1>Ola, Sou o Vitor Michelotto</h1>
+                        <h1 className='texto_prin'>Ola, Sou o Vitor Michelotto</h1>
                         <h3>Estudante do IFMS Navirai</h3>
                         <p>Lorem ipsum dolor sit amet. Sit veritatis sint et nulla dicta et assumenda necessitatibus nam nisi pariatur! Est labore illum ut nemo esse ut repudiandae obcaecati aut illum ipsam sed voluptatem enim.</p>
                         <div className="btn-box">
-                            <Link texto='Contrate-Me' />
-                            <Link texto='Contato' />
+                            <Link url="#" texto='Contrate-Me' />
+                            <Link url="#" texto='Contato' />
                         </div>
                     </div>
                     <div>
