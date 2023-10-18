@@ -14,13 +14,13 @@ export function Footer(){
                     <h3>Adquira o Seu</h3>
                 </li>
                 <li>
-                    <Link texto='Home'/>
+                    <Link url="#" texto='Home'/>
                 </li>
                 <li>
-                    <Link texto='Cursos'/>
+                    <Link url="#" texto='Cursos'/>
                 </li>
                 <li>
-                    <Link texto='Downloads'/>
+                    <Link url="#" texto='Downloads'/>
                 </li>
             </ul>
 
@@ -29,13 +29,13 @@ export function Footer(){
                     <h3>Contato</h3>
                 </li>
                 <li>
-                    <Link texto='Cookies'/>
+                    <Link url="#" texto='Cookies'/>
                 </li>
                 <li>
-                    <Link texto='Sobre'/>
+                    <Link url="#" texto='Sobre'/>
                 </li>
                 <li>
-                    <Link texto='Termos e Condições'/>
+                    <Link url="#" texto='Termos e Condições'/>
                 </li>
             </ul>
 
@@ -44,13 +44,13 @@ export function Footer(){
                     <h3>Suporte</h3>
                 </li>
                 <li>
-                    <Link texto='FAQ'/>
+                    <Link url="#" texto='FAQ'/>
                 </li>
                 <li>
-                    <Link texto='Telefones'/>
+                    <Link url="#" texto='Telefones'/>
                 </li>
                 <li>
-                    <Link texto='Chat'/>
+                    <Link url="/contato" texto='contato'/>
                 </li>
             </ul>
 

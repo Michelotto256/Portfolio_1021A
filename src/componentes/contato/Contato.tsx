@@ -83,7 +83,7 @@ export function Contato(){
                     </div>
 
                     <div className="continue-button">
-                        <button><a href="#">Continuar</a></button>
+                        <button><Link url="#" texto='Continuar'/></button>
                     </div>
                 </form>
             </div>
