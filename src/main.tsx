@@ -1,6 +1,6 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import  './main.css'
+import  './Main.css'
 import Header from './componentes/header/Header';
 import Footer from './componentes/footer/Footer';
 import Meio from './componentes/meio/Meio';
