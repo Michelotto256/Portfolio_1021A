@@ -1,6 +1,6 @@
 import './Contato.css'
-import Link from '../linknav/LinkNav'
 import imagem from "/undraw_shopping_re_3wst.svg";
+import LinkNav from '../linknav/LinkNav';
 
 export function Contato(){
     return(
@@ -17,7 +17,7 @@ export function Contato(){
                             <h1>Cadastre-se</h1>
                         </div>
                         <div className="login-button">
-                            <button><a href="#">Entrar</a></button>
+                            <button><LinkNav url="#" texto='Entrar'></LinkNav></button>
                         </div>
                     </div>
 
@@ -83,7 +83,7 @@ export function Contato(){
                     </div>
 
                     <div className="continue-button">
-                        <button><Link url="#" texto='Continuar'/></button>
+                        <button><LinkNav url="#" texto='Continuar'/></button>
                     </div>
                 </form>
             </div>
