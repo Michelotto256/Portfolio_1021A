@@ -66,19 +66,6 @@ p{
     color: #00abf0;
 }
 
-.btn-box a:nth-child(2){
-    background-color: transparent;
-    color: #00abf0;
-}
-
-.btn-box a:nth-child(2):hover{
-    color: #081b29;
-}
-
-.btn-box a:nth-child(2)::before{
-    background: #00abf0;
-}
-
 .btn-box a::before{
     content: '';
     position: absolute;

@@ -82,8 +82,8 @@ export function Contato(){
                         </div>
                     </div>
 
-                    <div className="continue-button">
-                        <button><LinkNav url="#" texto='Continuar'/></button>
+                    <div className="btn-box1">
+                        <LinkNav url="#" texto='Continuar'/>
                     </div>
                 </form>
             </div>

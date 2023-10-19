@@ -26,7 +26,7 @@ export function Footer(){
 
             <ul className="lista">
                 <li>
-                    <h3>Contato</h3>
+                    <h3>Regras</h3>
                 </li>
                 <li>
                     <Link url="#" texto='Cookies'/>
@@ -50,7 +50,7 @@ export function Footer(){
                     <Link url="#" texto='Telefones'/>
                 </li>
                 <li>
-                    <Link url="/contato" texto='contato'/>
+                    <Link url="/contato" texto='Contato'/>
                 </li>
             </ul>
 

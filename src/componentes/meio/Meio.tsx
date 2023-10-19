@@ -58,7 +58,7 @@ function Meio() {
                         <p>Lorem ipsum dolor sit amet. Sit veritatis sint et nulla dicta et assumenda necessitatibus nam nisi pariatur! Est labore illum ut nemo esse ut repudiandae obcaecati aut illum ipsam sed voluptatem enim.</p>
                         <div className="btn-box">
                             <Link url="#" texto='Contrate-Me' />
-                            <Link url="#" texto='Contato' />
+                            <Link url="/contato" texto='Contato' />
                         </div>
                     </div>
                     <div>
