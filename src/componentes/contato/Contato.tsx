@@ -1,8 +1,26 @@
 import './Contato.css'
 import imagem from "/undraw_shopping_re_3wst.svg";
 import LinkNav from '../linknav/LinkNav';
+import { useState } from 'react'
 
 export function Contato(){
+    const [nome,setNome]=useState("")
+    const [email,setEmail]=useState("")
+    const [cel,setCel]=useState("")
+    const [msg,setMsg]=useState("")
+
+    function TrataNome(e:React.ChangeEvent<HTMLInputElement>){
+        setNome(e.target.value)
+    }
+    function TrataEmail(e:React.ChangeEvent<HTMLInputElement>){
+        setEmail(e.target.value)
+    }
+    function TrataCel(e:React.ChangeEvent<HTMLInputElement>){
+        setCel(e.target.value)
+    }
+    function TrataMsg(e:React.ChangeEvent<HTMLTextAreaElement>){
+        setMsg(e.target.value)
+    }
     return(
         <>
         <div className='tudo'>
@@ -13,7 +31,7 @@ export function Contato(){
             <div className="form">
                 <form action="#">
                     <div className="form-header">
-                        <div className="title">
+                        <div className="titulo">
                             <h1>Cadastre-se</h1>
                         </div>
                         <div className="login-button">
@@ -21,59 +39,69 @@ export function Contato(){
                         </div>
                     </div>
 
-                    <div className="input-group">
+
+                    <div className="input-tudo">
                         <div className="input-box">
-                            <label htmlFor="firstname">Primeiro Nome</label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required/>
+                            <label htmlFor="name">Nome</label>
+                            <input id="name" type="text" name="name" placeholder="Digite seu nome" onChange={TrataNome} required/>
                         </div>
 
-                        <div className="input-box">
-                            <label htmlFor="lastname">Sobrenome</label>
-                            <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required />
-                        </div>
                         <div className="input-box">
                             <label htmlFor="email">E-mail</label>
-                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" required />
+                            <input id="email" type="email" name="email" placeholder="Digite seu e-mail" onChange={TrataEmail} required />
                         </div>
 
                         <div className="input-box">
-                            <label htmlFor="number">Celular</label>
-                            <input id="number" type="tel" name="number" placeholder="(xx) xxxx-xxxx" required />
+                            <label htmlFor="telefone">Celular</label>
+                            <input id="number" type="tel" name="telefone" placeholder="(xx) xxxx-xxxx" pattern="^\(?\d{2}\)?[-.\s]?\d{4}[-.\s]?\d{4}$" onChange={TrataCel} required />
                         </div>
 
-                        <div className="input-box">
-                            <label htmlFor="assunto">Assunto</label>
-                            <input id="assunto" type="text" name="Assunto" placeholder="Digite o Assunto" />
+  
+                        <div className="input-box2">                      
+                        
+                        <div className='box2'>
+                            <p>Nome:{nome && <p> {nome} </p>}</p>
                         </div>
 
-                        <div className="input-box">
+                        <div className='box2'>
+                            <p>Email:{email && <p> {email} </p>}</p>
+                        </div>
+                        
+                        <div className='box2'>
+                            <p>Celular:{cel && <p> {cel} </p>}</p>
+                        </div>
+                        
                             <label htmlFor="mensagem">Mensagem</label>
-                            <input id="mensagem" type="text" name="Mensagem" placeholder="Digite sua Mensagem" />
+                            <textarea id="mensagem" name="Mensagem" placeholder="Digite sua Mensagem" required onChange={TrataMsg}></textarea>
+                            <div className='box2'>
+                            <p>Mensagem:{msg && <p> {msg} </p>}</p>
                         </div>
+                        </div>
+
                     </div>
-                    <div className="gender-inputs">
-                        <div className="gender-title">
+                    <div className="genero-inputs">
+                        <div className="genero-titulo">
                             <h6>Gênero</h6>
                         </div>
 
-                        <div className="gender-group">
-                            <div className="gender-input">
-                                <input id="female" type="radio" name="gender" />
+                        <div className="genero-tudo">
+                            <div className="genero-input">
+                                <input id="female" type="radio" name="genero" />
                                 <label htmlFor="female">Feminino</label>
                             </div>
 
-                            <div className="gender-input">
-                                <input id="male" type="radio" name="gender" />
+                            <div className="genero-input">
+                                <input id="male" type="radio" name="genero" />
                                 <label htmlFor="male">Masculino</label>
                             </div>
 
-                            <div className="gender-input">
-                                <input id="others" type="radio" name="gender" />
+                            <div className="genero-input">
+                                <input id="others" type="radio" name="genero" />
                                 <label htmlFor="others">Outros</label>
                             </div>
 
-                            <div className="gender-input">
-                                <input id="none" type="radio" name="gender" />
+                            <div className="genero-input">
+                                <input id="none" type="radio" name="genero" />
                                 <label htmlFor="none">Prefiro não dizer</label>
                             </div>
                         </div>

@@ -84,17 +84,48 @@
     border-radius: 10px;
 }
 
-.input-group {
+.input-tudo {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 0;    
+}
+#mensagem{
+    height: 80px;
+    width: 340%;
+    padding-top: 30px;
+}
+.input-box2 textarea {
+    margin: 0.6rem 0;
+    padding: 0.8rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 6px #0000001c;
+    font-size: 0.8rem;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.input-box2 textarea:hover {
+    background-color: #eeeeee75;
+}
+
+.input-box2 textarea:focus-visible {
+    outline: 1px solid #6c63ff;
+}
+
+.input-box2 {
+    display: block;
+    flex-direction: column;
+    margin-bottom: 1.1rem;
+    max-width: 192px;
 }
 
 .input-box {
     display: flex;
     flex-direction: column;
     margin-bottom: 1.1rem;
+    max-width: 300px;
 }
 
 .input-box input {
@@ -115,7 +146,7 @@
 }
 
 .input-box label,
-.gender-title h6 {
+.genero-titulo h6 {
     font-size: 0.75rem;
     font-weight: 600;
     color: #000000c0;
@@ -125,23 +156,23 @@
     color: #000000be;
 }
 
-.gender-group {
+.genero-tudo {
     display: flex;
     justify-content: space-between;
     margin-top: 0.62rem;
     padding: 0 .5rem;
 }
 
-.gender-input {
+.genero-input {
     display: flex;
     align-items: center;
 }
 
-.gender-input input {
+.genero-input input {
     margin-right: 0.35rem;
 }
 
-.gender-input label {
+.genero-input label {
     font-size: 0.81rem;
     font-weight: 600;
     color: #000000c0;
@@ -207,4 +238,15 @@
 
 .btn-box1 a:hover::before{
     width: 100%;
+}
+
+
+.box2{
+    display: flex;
+}
+.box2 p{
+    margin: 0.6rem 0;
+    font-size: 0.7rem;
+    color: black;
+    word-break: normal;
 }
