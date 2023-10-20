@@ -1,13 +1,13 @@
 import './Footer.css'
 import Link from '../linknav/LinkNav'
-import imagem from "../img/logopé.png";
+import logos from "../img/logopé.png";
 
 export function Footer(){
     return(
     <footer>
         <div className='conteudo'>
             <div className='coisas'>
-            <img className='rodape' src={imagem} alt="" />
+            <img className='rodape' src={logos} alt="" />
             </div>
             <ul className="lista">
                 <li>
