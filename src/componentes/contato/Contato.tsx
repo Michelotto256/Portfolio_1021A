@@ -24,7 +24,7 @@ export function Contato(){
                     <div className="input-group">
                         <div className="input-box">
                             <label htmlFor="firstname">Primeiro Nome</label>
-                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required />
+                            <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome" required/>
                         </div>
 
                         <div className="input-box">
@@ -42,18 +42,15 @@ export function Contato(){
                         </div>
 
                         <div className="input-box">
-                            <label htmlFor="password">Senha</label>
-                            <input id="password" type="password" name="password" placeholder="Digite sua senha" required />
+                            <label htmlFor="assunto">Assunto</label>
+                            <input id="assunto" type="text" name="Assunto" placeholder="Digite o Assunto" />
                         </div>
-
 
                         <div className="input-box">
-                            <label htmlFor="confirmPassword">Confirme sua Senha</label>
-                            <input id="confirmPassword" type="password" name="confirmPassword" placeholder="Digite sua senha novamente" required />
+                            <label htmlFor="mensagem">Mensagem</label>
+                            <input id="mensagem" type="text" name="Mensagem" placeholder="Digite sua Mensagem" />
                         </div>
-
                     </div>
-
                     <div className="gender-inputs">
                         <div className="gender-title">
                             <h6>Gênero</h6>
